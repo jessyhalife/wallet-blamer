@@ -1,13 +1,13 @@
 import { timeSince } from "../lib/date.helper";
 const Dashboard = ({ categories, expenses }) => {
   return (
-    <div className="container mx-auto px-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-20">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 sm: grid-cols-1 w-screen pl-0 md:grid-cols-3 md:col-gap-16 lg: grid-cols-3 col-gap-32 row-gap-20 md:row-gap-32 mb-20">
         {categories &&
           categories.map((item) => (
             <div key={item.id}>
-              <div className="shadow-md">
-                <div className="flex justify-between">
+              <div className="shadow-md sm: w-full">
+                <div className="flex justify-between ">
                   <p className="flex-auto text-3xl px-5 py-3 font-semibold">
                     {item.name}
                   </p>

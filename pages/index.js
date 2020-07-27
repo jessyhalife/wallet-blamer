@@ -21,7 +21,7 @@ export default function Home({ expenses, categories }) {
         />
       </Head>
       <Header size="big" />
-      <div className="container mx-auto px-5">
+      <div className="container mx-auto m-20 my-10">
         <h1 className="text-2xl tracking-tighter leading-tight mx-10 mb-20">
           from <b>{month}</b>
         </h1>
